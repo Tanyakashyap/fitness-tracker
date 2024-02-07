@@ -20,7 +20,7 @@ export class TrainingService {
     private firestoreDb: AngularFirestore,
     private uiService: UiService,
     private store: Store<fromTraining.State>
-  ) {}
+  ) { }
 
   getAllExercises() {
     this.store.dispatch(new Ui.StartLoading());
@@ -29,6 +29,7 @@ export class TrainingService {
       .snapshotChanges()
       .pipe(
         map((docArray) => {
+          debugger
           return <Exercise[]>docArray.map((doc) => {
             const otherData: Object = doc.payload.doc.data();
             return {

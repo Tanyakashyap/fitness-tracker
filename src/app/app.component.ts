@@ -7,10 +7,10 @@ import { AuthService } from './services/auth.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  title = 'angular-fitness-tracker';
+  title = 'fitness-tracker';
   openSideNav: boolean = false;
 
-  constructor (private authService: AuthService){}
+  constructor(private authService: AuthService) { }
 
   ngOnInit(): void {
     this.authService.initAuthListener();

@@ -17,7 +17,6 @@ import { StoreModule } from '@ngrx/store';
 import { reducers } from './app.reducer';
 import { HttpClientModule } from '@angular/common/http';
 import { MenuComponent } from './navigation/menu/menu.component';
-import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +25,6 @@ import { AboutComponent } from './about/about.component';
     HeaderComponent,
     SidenavListComponent,
     MenuComponent,
-    AboutComponent,
   ],
   imports: [
     BrowserModule,
@@ -46,4 +44,4 @@ import { AboutComponent } from './about/about.component';
   // Will work even without adding it here
   // entryComponents: [StopTrainingComponent],
 })
-export class AppModule {}
+export class AppModule { }

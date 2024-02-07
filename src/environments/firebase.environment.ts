@@ -1,11 +1,10 @@
 export const firebase = {
   firebase: {
-    apiKey: 'AIzaSyBUtCNlDsorif5FmUKiFtWxrrLF-QcfKuI',
-    authDomain: 'fir-contact-c6ceb.firebaseapp.com',
-    databaseURL: 'https://fir-contact-c6ceb.firebaseio.com',
-    projectId: 'fir-contact-c6ceb',
-    storageBucket: 'fir-contact-c6ceb.appspot.com',
-    messagingSenderId: '512941871127',
-    appId: '1:512941871127:web:51fd458ae916cd84894c52',
+    apiKey: "AIzaSyDN9X5uTAXbIMNUjrM4bQ60OaAzl0FBVoM",
+    authDomain: "fitness-tracker-aa67f.firebaseapp.com",
+    projectId: "fitness-tracker-aa67f",
+    storageBucket: "fitness-tracker-aa67f.appspot.com",
+    messagingSenderId: "675069250378",
+    appId: "1:675069250378:web:561353ab4dfe509d718fb3"
   },
 };

@@ -19,7 +19,7 @@ export class AuthService {
     private trainingService: TrainingService,
     private uiService: UiService,
     private store: Store<State>
-  ) {}
+  ) { }
 
   registerUser(authData: AuthData) {
     this.store.dispatch(new Ui.StartLoading());
@@ -30,7 +30,7 @@ export class AuthService {
       })
       .catch((error) => {
         this.store.dispatch(new Ui.StopLoading());
-        this.uiService.showSnackbar(error, 'Okay !', 3000);
+        this.uiService.showSnackbar(JSON.parse(error.message).error.message || error, 'Okay !', 3000);
       });
   }
 
@@ -42,8 +42,9 @@ export class AuthService {
         this.store.dispatch(new Ui.StopLoading());
       })
       .catch((error) => {
+        debugger
         this.store.dispatch(new Ui.StopLoading());
-        this.uiService.showSnackbar(error, 'Okay !', 3000);
+        this.uiService.showSnackbar(JSON.parse(error.message).error.message || error, 'Okay !', 3000);
       });
   }
 
